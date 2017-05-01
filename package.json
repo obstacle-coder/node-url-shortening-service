@@ -5,10 +5,10 @@
   "engines": {
     "node": "5.9.1"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node lib/index.js",
-    "build": "babel src -d lib"
+    "build": "./node_modules/.bin/babel src -d lib",
+    "start": "npm run build && node lib/index.js"
   },
   "dependencies": {
     "pg": "4.x",
