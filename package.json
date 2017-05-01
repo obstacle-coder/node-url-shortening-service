@@ -1,0 +1,32 @@
+{
+  "name": "node-url-shortening-service",
+  "version": "0.0.1",
+  "description": "URL Shortening service written in NodeJS and Express",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "pg": "4.x",
+    "express": "4.13.3",
+    "lodash": "^3.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obstacle-coder/node-url-shortening-service.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0"
+  }
+}
